@@ -3,31 +3,46 @@
  * These are examples of utilities classes
  * Feel free to change them and create your own
  * ------------------------------------- */
+
+
 .padded {
   padding-top: 8em;
   padding-bottom: 8em;
+  padding: 100px 0;
 }
 .bg-red {
   background: $red;
   color: white;
+  padding: 100px 0;
 }
 .bg-blue {
   background: $blue;
   color: white;
+  padding: 200px 0;
+  position: relative
 }
 .bg-yellow {
   background: $yellow;
   color: white;
+  padding: 100px 0;
 }
 .bg-orange {
   background: $orange;
   color: white;
+  padding: 100px 0;
 }
 .bg-green {
   background: $green;
   color: white;
+  padding: 100px 0;
 }
 .bg-purple {
   background: $purple;
   color: white;
+  padding: 100px 0;
+}
+
+.larger-font-p {
+  font-size: 24px;
+  font-weight: bold;
 }

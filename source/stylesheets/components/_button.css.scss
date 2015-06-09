@@ -1,0 +1,15 @@
+.btn-soft {
+  border-radius: $border-radius-large;
+  background-color: none;
+  font-weight: 100;
+  border-color: $gray-lighter;
+  padding: 10px 15px;
+  font-size: 15px;
+  color: $gray-lighter;
+  letter-spacing: 3px;
+  &:hover {
+    color: white;
+    border-color: white;
+    transition: color 0.5s border-color 0.5s
+  }
+}

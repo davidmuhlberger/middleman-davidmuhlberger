@@ -1,1 +1,19 @@
-// Your footer style
+#footer {
+  background-color: #222222;
+  color: #DCDCDC;
+  height: 160px;
+  padding: 50px 0;
+  a {
+    color: #DCDCDC;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 20px;
+    &:hover {
+      color: $yellow;
+      transition: color 0.5s;
+    }
+  }
+  p {
+    margin-top: 15px
+  }
+}

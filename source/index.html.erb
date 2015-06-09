@@ -2,7 +2,7 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-  <div id="banner">
+  <div id="banner" class="window-height">
     <div class="container">
       <div class="row">
         <div class="col-xs-6">
@@ -11,21 +11,22 @@ title: Le Wagon Middleman boilerplate
           <p>Turn your pen into your best friend</p>
           <p>Make every line you write count.</p>
           <br>
-          <div class="btn btn-primary">
-            <%= link_to "GET YOUR STYLUS", "" %>
-          </div>
+            <%= link_to "GET YOUR STYLUS", "", class: "btn btn-soft" %>
         </div>
         <div class="col-xs-6">
         </div>
       </div>
     </div>
+    <div>
+      <%= link_to "#{'<i class="fa fa-angle-down"></i>'}", "#caracteristics", class: "arrow pulse" %>
+    </div>
   </div>
 
-  <div class="bg-blue">
+  <div class="bg-blue" id="caracteristics">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3 text-center">
-          <div class="card">
+          <div class="card" data-sr="over 1.5s, wait 0.5s">
             <%= image_tag "paper.svg" %>
             <h2>Natural writing</h2>
             <p>
@@ -34,7 +35,7 @@ title: Le Wagon Middleman boilerplate
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 text-center">
-          <div class="card">
+          <div class="card" data-sr="over 1.2s, wait 0.9s">
             <%= image_tag "computer.svg" %>
             <h2>Sync. copy</h2>
             <p>
@@ -43,7 +44,7 @@ title: Le Wagon Middleman boilerplate
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 text-center">
-          <div class="card">
+          <div class="card" data-sr="over 1s, wait 1.2s">
             <%= image_tag "analytics.svg" %>
             <h2>Analytics</h2>
             <p>
@@ -52,7 +53,7 @@ title: Le Wagon Middleman boilerplate
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 text-center">
-          <div class="card">
+          <div class="card" data-sr="over 0.9s, wait 1.5s">
             <%= image_tag "data.svg" %>
             <h2>Storing your texts</h2>
             <p>
@@ -62,9 +63,12 @@ title: Le Wagon Middleman boilerplate
         </div>
       </div>
     </div>
+    <div>
+      <%= link_to "#{'<i class="fa fa-angle-down"></i>'}", "#news", class: "arrow pulse" %>
+    </div>
   </div>
 
-  <div class="text-center padded">
+  <div class="text-center padded" id="news">
     <h2>Get news from stylus</h2>
     <p>Leave us your mail and get stylus news</p>
     <form action="#" class="form-inline">
@@ -382,4 +386,8 @@ title: Le Wagon Middleman boilerplate
     map: map,
     title: "You are here!"
   });
+  </script>
+
+  <script>
+    window.sr = new scrollReveal();
   </script>
